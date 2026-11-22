@@ -1,0 +1,167 @@
+header {
+	display: flex; /* Active Flexbox pour organiser les éléments enfants */
+	justify-content: space-between; /* Répartit les éléments aux extrémités avec de l'espace autour de chacun */
+	align-items: center; /* Centre les éléments verticalement dans le conteneur */
+	gap: 10px; /* Ajoute un espace de 10 px entre les éléments h1 et nav */
+	padding: 4px 32px; /* mets 4 px en haut + bas d'espacement et 32 px gauche+droite pour s'éloigner du bord*/
+	}
+	
+/* Cible uniquement les liens du menu situé dans l’en-tête */
+header nav a {
+  padding: 10px 24px;       /* Espace intérieur : 10 px en haut et en bas, 14 px sur les côtés */
+  border: 1px solid #b8cbd6; /* Bordure continue de 1 px, bleu-gris */
+  border-radius: 8px;       /* Arrondit les coins */
+  background-color: white;  /* Donne un fond blanc au lien */
+  color: #246580;           /* Reprend le bleu du pied de page pour le texte */
+  font-weight: 600;         /* Donne un peu plus de poids au texte */
+  text-decoration: none;   /* Retire le soulignement du lien */
+  }
+
+/* Au survol de la souris ou quand on sélectionne le lien au clavier (Tab) */
+header nav a:hover,
+header nav a:focus-visible {
+  background-color: #e8f2f7; /* Passe le fond en bleu clair */
+  border-color: #246580;    /* Rend la bordure plus marquée */
+}
+	
+@media (max-width: 622px) {
+  header nav {
+    align-self: stretch;    /* Étire le menu sur la largeur disponible dans le header */
+    flex-direction: column; /* Place les boutons les uns sous les autres */
+    align-items: stretch;   /* Étire chaque bouton sur toute la largeur du menu */
+  }
+  header{
+	  flex-direction: column;
+  }
+  header nav a {
+    text-align: center;     /* Centre le texte dans chaque bouton */
+  }
+}
+	
+	
+	
+.div-flex{
+	display: flex;
+	justify-content: space-around;
+	gap:24px;
+	align-items:center;
+	flex-wrap: wrap;
+
+}
+nav {
+	display:flex; /* organise les éléments enfants qui sont les boutons de navigations */
+	gap:24px; /* espace les boutons de navigation de 24 px entre eux */
+
+	}
+
+h1 {
+	text-align: left; /* alignement à gauche */
+	font-family: calibri; /* police d'écriture*/
+	font-size: 48px;	/* taille de la police en pixels*/
+	color: #1A181B ; /* couleur Shadow grey, voir site 'coolors.co' */
+	}
+
+h2 {
+	text-align: left; /* alignement à gauche */
+	font-family: calibri; /* police d'écriture*/
+	font-size: 36px;	/* taille de la police en pixels*/
+	color: #1A181B ; /* couleur Shadow grey, voir site 'coolors.co' */
+	
+	}
+
+body {
+  background-color: GhostWhite ;
+  color: #1A181B; /* un sorte de "Shadow Grey" , seul le code hexa comtpe */
+  font-family: calibri, sans-serif;
+}
+
+.italianno-police {
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+figure {
+  max-width: 800px; /* La figure ne dépassera pas 800 px */
+}
+img {
+  max-width: 100%; /*L’image ne dépasse jamais du conteneur figure */
+  height: auto;  /*   L’image conserve ses proportions */
+}
+
+.cover-section1{
+	background-image: url("bg1.png");
+	background-size:cover;
+}
+
+.cover-section2{
+	background-image: url("bg2.png");
+	background-size:cover;
+}
+
+.cover-section3{
+	background-image: url("bg3.png");
+	background-size:cover;
+}
+
+.conteneur-img {
+    width: 550px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 16px;
+}
+
+.joli{
+	color:red;
+	font-style : italic;
+}
+
+/* Style pour le footer */
+
+footer {
+  display: flex; /* Place les liens et le copyright côte à côte */
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 5%;
+  border-top: 3px solid #dcdced;/* Trace une bordure supérieure */
+  background-color: GhostWhite;
+
+}
+
+.liens-footer {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;   
+
+}
+
+.liens-footer a {
+  display: flex;    /* Organise le contenu de chaque lien */
+  flex-direction: column;   /* Place le symbole au-dessus du texte */
+  align-items: center;   /* Les centre horizontalement, oui, car l'axe principal est devenu vertical */
+  gap: 4px;
+
+  color: #1a181b;
+  text-decoration: none; /* Retire le soulignement des liens */
+}
+
+.icone-footer {
+  display: flex;/* Permet de centrer le symbole dans le cercle avec...*/
+  justify-content: center; /* ... un centrage horizontal*/
+  align-items: center;/* un centrage vertical*/
+
+  width: 36px; /* Largeur du cercle */
+  height: 36px; /* Même hauteur pour obtenir un carré */
+  border-radius: 50%; /* Transforme le carré en cercle */
+
+  background-color: #246580; /* Couleur du cercle */
+  color: white; /* Couleur du symbole */
+  font-weight: bold;
+}
+
+footer p {
+  margin: 0;/* Supprime les marges par défaut du paragraphe */
+  color: #777d88;
+ 
+}
