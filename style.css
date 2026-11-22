@@ -24,12 +24,13 @@ header nav a:focus-visible {
   border-color: #246580;    /* Rend la bordure plus marquée */
 }
 	
-@media (max-width: 622px) {
+/*@media (max-width: 622px) {
   header nav {
     align-self: stretch;    /* Étire le menu sur la largeur disponible dans le header */
     flex-direction: column; /* Place les boutons les uns sous les autres */
     align-items: stretch;   /* Étire chaque bouton sur toute la largeur du menu */
   }
+*/
   header{
 	  flex-direction: column;
   }
